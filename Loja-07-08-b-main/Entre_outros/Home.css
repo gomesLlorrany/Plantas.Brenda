@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e5f0ea;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Ajuste o tamanho da logo */
+  height: auto;
+  margin-right: 10px;
+}
+
+h1 {
+  color: #2b4c40;
+  font-size: 24px;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2b4c40;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #c7d8c9;
+  color: #ffffff; /* Muda a cor do texto ao passar o mouse */
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+
+.info-box {
+  background-color: #fff;
+  width: 22%;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+  text-align: left;
+}
+
+.info-box h3 {
+  margin-top: 10px;
+  color: #2b4c40;
+}
+
+.info-box p {
+  margin-top: 5px;
+  color: #2b4c40;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 30px;
+}
+
+.offer {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.offer-content {
+  margin-bottom: 20px; /* Espaçamento entre o conteúdo e os círculos */
+}
+
+.offer h2 {
+  margin: 0;
+  font-size: 40px; /* Aumenta o tamanho da fonte do título */
+  color: #2b4c40;
+}
+
+.offer p {
+  margin: 5px 0 0; /* Diminui a margem superior para reduzir a distância do subtítulo */
+  font-size: 18px; /* Ajuste o tamanho da fonte do subtítulo se necessário */
+  color: #555;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 70px; /* Espaçamento entre os círculos */
+}
+
+.circle-image {
+  width: 80px; /* Ajuste o tamanho do círculo conforme necessário */
+  height: 80px;
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Mantém a proporção da imagem dentro do círculo */
+}
+
+.offer:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 1px;
+  height: 30px;
+  background-color: #2b4c40;
+  transform: translateY(-50%);
+}
+
+/* Estilo personalizado para os cartões */
+.custom-card {
+  border-radius: 10px; /* Borda arredondada para o cartão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o cartão */
+  margin: 0 10px; /* Margem das laterais */
+}
+
+.card-img-top {
+  height: 150px; /* Ajuste a altura da imagem */
+  object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.card-body {
+  padding: 15px; /* Ajuste o padding do corpo do cartão */
+}
+
+.card-title {
+  font-size: 18px; /* Ajuste o tamanho da fonte do título */
+}
+
+.card-text {
+  font-size: 14px; /* Ajuste o tamanho da fonte do texto */
+}

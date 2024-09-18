@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Finesse - Login</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="../Imagem/plano de fundo.jpg" alt="Imagem de Planta">
+        </div>
+        <div class="right">
+            <div class="logo-container">
+                <h1>Flora Finesse</h1>
+                <img src="../Imagem/logo.png" alt="Logo" class="logo"> <!-- Logo no lado direito -->
+            </div>
+            <h2>Faça o seu login</h2>
+            <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="User" required id="username">
+                        <img src="../Imagem/user.png" alt="User Icon" class="input-icon">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required id="password">
+                        <img src="../Imagem/padlock.png" alt="Lock Icon" class="input-icon">
+                        <a alt="Eye Icon" class="toggle-password" onclick="togglePasswordVisibility()">
+                            </a>
+                    </div>
+
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Lembre-me</label>
+                    <a href="#" class="underline">Esqueceu a senha?</a>
+                </div>
+                <br><br>
+                <div class="divider">
+                    <button type="button" onclick="location.href='Home.html'">Login</button>
+
+                    <p class="signup-text">Não tem uma conta? <a href="#" class="signup">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.querySelector('.toggle-password');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.src = 'eye-icon-visible.png'; // Substitua pela imagem do olho visível
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.src = 'eye-icon.png'; // Substitua pela imagem do olho oculto
+            }
+        }
+
+        var marvel = Date.now()
+        alert(marvel)
+    </script>
+
+
+</body>
+
+</html>
